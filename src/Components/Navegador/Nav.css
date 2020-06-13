@@ -1,0 +1,59 @@
+.nav-logo img{
+    margin-top: -10px;
+    /* margin-left: 40px; */
+    width: 80px;
+}
+
+.btn-contact{
+    text-decoration: none;
+    color: #000;
+    background: skyblue;
+}
+
+.btn-contact:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.bars{
+    width: 30px;
+    margin-top: 50px;
+    display: none;
+}
+
+.navegador a {
+    text-decoration: none;
+    padding: 8px 30px ;
+    color: #fff;
+}
+
+.navegador a:hover{
+    background: skyblue;
+    color: #000;
+}
+
+@media(max-width: 1000px){
+    .navegador a:hover{
+        background: none;
+    }
+
+    .navegador a{
+        padding: 0 25px;
+    }
+
+    .btn-contact{
+        background: none;
+        color: white;
+    }
+
+    .btn-contact:hover{
+        background: none;
+        color: #000;
+    }
+
+    .nav-item{
+        margin: auto;
+        text-align: right;
+        width: 100%;
+    }    
+}

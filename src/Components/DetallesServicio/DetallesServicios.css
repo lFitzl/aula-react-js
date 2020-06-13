@@ -1,0 +1,59 @@
+.servicios{
+    margin-top: 250px;
+}
+.servicios h1{
+    color: #642a73;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.servicios span{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.decidido{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.servicios p{
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+}
+
+.servicios .btn-decidido{
+    font-size: 18px;
+    margin: auto;
+    text-decoration: none;
+    color: #000;
+    background: skyblue;
+    padding: 8px;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.btn-decidido:hover{
+    text-decoration: none;
+    color: #fff;
+    background: skyblue;
+    padding: 8px;
+    border: none;
+}
+
+
+@media screen and (max-width:900px){
+    .servicios .btn-decidido{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .servicios .btn-decidido{
+        font-size: 10px;
+    }
+}

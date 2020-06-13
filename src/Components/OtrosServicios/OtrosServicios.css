@@ -1,0 +1,16 @@
+.otroServicios{
+    background: #303030;
+}
+
+.galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sub-titulo{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    display: block
+}

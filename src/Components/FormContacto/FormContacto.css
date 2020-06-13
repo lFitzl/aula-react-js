@@ -1,0 +1,53 @@
+.contacto{
+    margin-top: 250px;
+}
+
+.content{
+    margin: 0 auto;
+    width: 100%;
+    background: white;
+}
+
+#form {
+    width: 50%;
+}
+
+#form h1{
+    text-align: center;
+}
+
+.incorrecto{
+    color: orangered;
+}
+
+@media(max-width: 1550px){
+    .btn-success{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1000px){
+    #form{
+        width: 80%;
+    }
+}
+
+@media(max-width: 560px){
+    #form h1{
+        font-size: 20px;
+    }
+    #form h6{
+        font-size: 14px;
+    }
+
+    #form label{
+        font-size: 18px;
+    }
+    .btn-success{
+        font-size: 16px;
+    }
+}
+
+
+
+

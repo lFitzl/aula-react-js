@@ -1,0 +1,89 @@
+.client .titulo{
+    color: #000;
+}
+
+.galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.client{
+    
+    padding: 20px 0;
+}
+
+.client .contenedor{
+    width: 60%;
+    margin: auto;
+}
+
+.client h2{
+    color: #fff;
+}
+
+.imagen-servicio{
+    width: 40%;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.9);
+}
+
+.imagen-servicio a{
+    text-decoration: none;
+    color: white;
+}
+
+.imagen-servicio > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #6C63FF;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.imagen-servicio:hover .hover-galeria{
+    transform: scale(1);
+}
+
+@media screen and (max-width:950px){
+    .client{
+        margin-top: 250px;
+    }
+
+    .client .titulo{
+        font-size: 30px;
+    }
+    
+    .imagen-servicio{
+        width: 40%;
+    }
+
+    .imagen-servicio a{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .imagen-servicio{
+        width: 100%;
+    }
+
+}

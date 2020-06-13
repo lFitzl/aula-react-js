@@ -1,0 +1,139 @@
+.basico, .pro, .master{
+    position: relative;
+    width: 320px;
+    height: 580px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.basico{
+    height: 580px;
+}
+
+.pro{
+    height: 690px;
+}
+
+.master{
+    height: 750px;
+}
+
+
+.basico:before,
+.pro:before,
+.master:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #232323;
+    clip-path: circle(130px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.basico:hover:before,
+.pro:hover:before,
+.master:hover:before{
+    transition: 0.5s ease-in-out;
+    clip-path: circle(300px at 80% -20%);
+}
+
+.basico:hover:before{
+    background: #B6B1FF;
+}
+
+.pro:hover:before{
+    background: #A02667;
+}
+
+.master:hover:before{
+    background: #F57200;
+}
+
+.basico:hover .imgLg,
+.pro:hover .imgLg,
+.master:hover .imgLg{
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.basico:hover .opcion-content{
+    height: 380px;
+}
+
+.pro:hover .opcion-content{
+    height: 460px;
+}
+
+.master:hover .opcion-content{
+    height: 540px;
+}
+
+.basico:hover .opcion-content .nivel,
+.pro:hover .opcion-content .nivel,
+.master:hover .opcion-content .nivel{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s ;
+}
+
+
+.basico .opcion-content .nivel:nth-child(8),
+.basico .opcion-content .nivel:nth-child(9),
+.basico .opcion-content .nivel:nth-child(10),
+.basico .opcion-content .nivel:nth-child(11){
+    display: none;
+}
+
+.pro .opcion-content .nivel:nth-child(10),
+.pro .opcion-content .nivel:nth-child(11){
+    display: none;
+}
+
+
+.basico .sí,
+.pro .sí,
+.master .sí{
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.basico .sí{
+    background: #B6B1FF !important;
+}
+
+.pro .sí{
+    background: #A02667 !important;
+}
+
+.master .sí{
+    background: #F57200 !important;
+}
+
+.btn-compra{
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.basico .btn-compra{
+    background: #B6B1FF
+}
+
+.pro .btn-compra{
+    background: #A02667;
+}
+
+.master .btn-compra{
+    background: #F57200;
+}
+
+.btn-compra:hover{
+    color: #fff;
+    background: orangered;
+    text-decoration: none;
+}

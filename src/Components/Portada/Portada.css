@@ -1,0 +1,58 @@
+.portada{
+    color: #fff;
+    margin: 200px 130px;
+}
+
+.portada h1{
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+.btn-contact, .btn-more{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: skyblue;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-more:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media(max-width: 1060px){
+    .portada{
+        margin: 150px 50px;
+    }
+}
+
+@media(max-width: 950px){
+    .portada{
+        margin: 120px 40px;
+    }
+}
+
+.portada h1{
+    font-size: 50px;
+    transition: all 1s;
+}
+
+@media(max-width: 750px){
+    .portada{
+        margin: 80px 40px;
+    }
+    .portada h1{
+        font-size: 40px;
+        transition: all 1s;
+    }
+}
+
+@media(max-width: 415px){
+    .portada h1{
+        font-size: 30px;
+        transition: all 1s;
+    }
+}

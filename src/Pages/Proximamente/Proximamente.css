@@ -1,0 +1,16 @@
+.proximamente{
+    text-align: center;
+    margin: auto;
+    background: #fff; 
+}
+
+.imgProx{
+    margin-top: 100px;
+}
+
+@media(max-width:1200px){
+    .imgProx{
+        margin-top: 150px;
+        width: 500px;
+    }
+}

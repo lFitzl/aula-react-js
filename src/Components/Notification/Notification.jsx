@@ -2,15 +2,15 @@ import React from 'react'
 import './Notification.css'
 import {Link} from 'react-router-dom'
 
-const Notification = (props) =>{
+const Notification = ({anuncio, ruta, img}) =>{
     return(
         <div className="notification">
             <div className="contents">
-                <small> {props.anuncio} </small>
-                <p><Link to={props.ruta}>Click aquí</Link></p>
+                <small> {anuncio} </small>
+                <p><Link to={ruta}>Click aquí</Link></p>
             </div>
             <div className="notification-img">
-                <img src={props.img} alt="servicios"/>
+                <img src={img} alt="servicios"/>
             </div>
         </div>
     )

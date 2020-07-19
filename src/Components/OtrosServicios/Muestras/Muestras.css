@@ -25,6 +25,12 @@
     color: white;
 }
 
+.imagen-servicio a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
 .imagen-servicio > img{
     width: 100%;
     height: 100%;

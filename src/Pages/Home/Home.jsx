@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import Portada from '../../Components/Portada/Portada'
 import Notification from '../../Components/Notification/Notification'
 import Navegador from '../../Components/Navegador/Navegador'
@@ -8,7 +8,7 @@ import notimg_1 from './not-img1.png'
 
 const Home = () => {
     return(
-        <Fragment>
+        <>
             <Navegador nav="inicio"/>
             <Portada
                 tit1="La tecnología"
@@ -20,7 +20,7 @@ const Home = () => {
                 anuncio="¡Informate más sobre nuestros servicios!"
                 img = {notimg_1}/>
             <Footer/>
-        </Fragment>
+        </>
     )
 }
 

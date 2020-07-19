@@ -7,7 +7,7 @@ import aula3 from './aula_virtual3.svg'
 import OtrosServicios from '../OtrosServicios/OtrosServicios';
 import {Link} from 'react-router-dom'
 
-const DetallesServicios = (props) => {
+const DetallesServicios = ({precios, proximamente}) => {
     return(
         <Fragment>
             <div className="servicios">
@@ -34,11 +34,11 @@ const DetallesServicios = (props) => {
                     
                     <div className="decidido">
                         <p className="mx-auto">¿Convencido?</p>
-                        <Link to="/Compra" type="button" className="btn-decidido">Click aquí y: ¡Obtén desde ahora un aula virtual!</Link>
+                        <Link to={precios} type="button" className="btn-decidido">Click aquí y: ¡Obtén desde ahora un aula virtual!</Link>
                     </div>
             </div>
             <OtrosServicios
-                ruta={props.ruta}/>
+                ruta={proximamente}/>
         </Fragment>
     )
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import './Detalles.css'
 
-const Detalles = (props) => {
+const Detalles = ({det, check, value}) => {
     return(
         <div className="nivel">
-            <h3> {props.det} </h3>
-            <span className={props.check}> {props.value} </span>
+            <h3> {det} </h3>
+            <span className={check}> {value} </span>
         </div>
     )
 }

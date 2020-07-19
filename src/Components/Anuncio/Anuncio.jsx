@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import './Anuncio.css'
 import aula from './aula_virtual.svg'
 
 const Anuncio = () => {
     return(
-        <Fragment>
+        <>
             <div className="anuncio">
                 <h2 className="titulo">Aula virtual</h2>
                 <div className="content-anuncio">
@@ -15,7 +15,7 @@ const Anuncio = () => {
                     </div>
                 </div>
             </div>
-        </Fragment>
+        </>
     )
 }
 

@@ -94,22 +94,22 @@
 }
 
 
-.basico .sí,
-.pro .sí,
-.master .sí{
+.basico .si,
+.pro .si,
+.master .si{
     border-radius: 20px;
     text-transform: uppercase;
 }
 
-.basico .sí{
+.basico .si{
     background: #B6B1FF !important;
 }
 
-.pro .sí{
+.pro .si{
     background: #A02667 !important;
 }
 
-.master .sí{
+.master .si{
     background: #F57200 !important;
 }
 

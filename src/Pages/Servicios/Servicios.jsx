@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Navegador from '../../Components/Navegador/Navegador'
 import Portada from '../../Components/Portada/Portada'
 import Footer from '../../Components/Footer/Footer'
@@ -6,16 +6,17 @@ import DetallesServicios from '../../Components/DetallesServicio/DetallesServici
 
 const Servicios = () => {
     return(
-        <Fragment>
+        <>
             <Navegador nav="servicios"/>
             <Portada
                 tit1="Te ayudamos con "
                 tit2="todo lo necesario."
                 ruta="/Precio"/>
             <DetallesServicios
-                ruta="/Proximamente"/>
+                precios="/Precios"
+                proximamente="/Proximamente"/>
             <Footer/>
-        </Fragment>
+        </>
     )
 }
 

@@ -6,7 +6,7 @@ import img2 from './data.svg'
 import img3 from './IA.svg'
 import img4 from './react.svg'
 
-const OtrosServicios = (props) =>{
+const OtrosServicios = ({ruta}) =>{
     return(
         <section className="otroServicios">
             <div className="contenedor">
@@ -14,19 +14,19 @@ const OtrosServicios = (props) =>{
                 <span className="sub-titulo">Anímate a explorar mucho más nuestra competitividad</span>
                 <div className="galeria">
                     <Muestras
-                        ruta={props.ruta}
+                        ruta={ruta}
                         servicio={img1}
                         nombre="Desarrollo Web"/>
                     <Muestras
-                        ruta={props.ruta}
+                        ruta={ruta}
                         servicio={img2}
                         nombre="Ánalisis de Datos"/>
                     <Muestras
-                        ruta={props.ruta}
+                        ruta={ruta}
                         servicio={img3}
                         nombre="Inteligencia Artificial"/>
                     <Muestras
-                        ruta={props.ruta}
+                        ruta={ruta}
                         servicio={img4}
                         nombre="Cursos"/>
                 </div>

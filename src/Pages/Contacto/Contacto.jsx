@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import FormContact from '../../Components/FormContacto/FormContacto'
 import Navegador from '../../Components/Navegador/Navegador'
 import Footer from '../../Components/Footer/Footer'
@@ -6,7 +6,7 @@ import Portada from '../../Components/Portada/Portada'
 
 const Contacto = () => {
     return(
-        <Fragment>
+        <>
             <Navegador/>
             <Portada
                 tit1="Observa nuestras"
@@ -15,7 +15,7 @@ const Contacto = () => {
             />
             <FormContact/>
             <Footer/>
-        </Fragment>
+        </>
     )
 }
 

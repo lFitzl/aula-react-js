@@ -30,7 +30,7 @@ const Opcion = (props) => {
                 <Detalles
                     det={props.det5}
                     value={props.cant5}
-                    check="sí"/>
+                    check="si"/>
                 <Detalles
                     det={props.det6}
                     value={props.cant6}
@@ -38,7 +38,7 @@ const Opcion = (props) => {
                 <Detalles
                     det={props.det7}
                     value={props.cant7}
-                    check="sí"/>
+                    check="si"/>
                 <Detalles
                     det={props.det8}
                     value={props.cant8}
@@ -46,7 +46,7 @@ const Opcion = (props) => {
                 <Detalles
                     det={props.det9}
                     value={props.cant9}
-                    check="sí"/>
+                    check="si"/>
                 <br/>
                 <Link to="/Compra" className="btn-compra" >¡Adquierelo aquí!</Link>
             </div>

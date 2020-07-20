@@ -1,19 +1,18 @@
 import React from 'react';
 import './Plan.css'
-import Opcion from './Opcion/Opcion'
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick'
-import basico from './basico.svg'
-import pro from './pro.svg'
-import master from './master.svg'
 import Explicacion from './Explicacion/Explicacion'
+import Basico from './Basico/Basico';
+import Pro from './Pro/Pro';
+import Master from './Master/Master';
 
-class Plan extends React.Component{
-    render(){
+class Plan extends React.Component {
+    render() {
         const config = {
             dots: false,
-            fade: true, 
+            fade: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
@@ -21,18 +20,14 @@ class Plan extends React.Component{
             slidesToScroll: 1,
             className: "slides"
         }
-        return(
+        return (
             <div className="planes">
                 <h1 className="p-titulo">Planes</h1>
                 <p className="p-intro">¡Observa los distintos planes y selecciona el que más te convenga!</p>
                 <div className="plan">
 
                     <Slider {...config}>
-                        <Opcion
-                            clase="basico"
-                            plan={basico}
-                            nombre="Básico"
-                            tiempo="1 mes"
+                        <Basico
                             precio="250 soles"
                             det1="Alumnos"
                             cant1="30"
@@ -44,12 +39,8 @@ class Plan extends React.Component{
                             cant4="sí"
                             det5="Tipos de archivos"
                             cant5="Todos"
-                            />
-                        <Opcion
-                            clase="pro"
-                            plan={pro}
-                            nombre="PRO"
-                            tiempo="1 mes"
+                        />
+                        <Pro
                             precio="350 soles"
                             det1="Alumnos"
                             cant1="55"
@@ -65,12 +56,8 @@ class Plan extends React.Component{
                             cant6="sí"
                             det7="Soporte"
                             cant7="24/7"
-                            />
-                        <Opcion
-                            clase="master"
-                            plan={master}
-                            nombre="MASTER"
-                            tiempo="1 mes"
+                        />
+                        <Master
                             precio="450 soles"
                             det1="Alumnos"
                             cant1="80"
@@ -90,13 +77,13 @@ class Plan extends React.Component{
                             cant8="sí"
                             det9="Personalización"
                             cant9="Full"
-                            />
+                        />
                     </Slider>
                     <span className="aviso">¡Deslizate y/o toca cerca del nombre del plan para descubrir los detalles! <b>↑</b> </span>
-                    <Explicacion/>
+                    <Explicacion />
                 </div>
             </div>
-        )   
+        )
     }
 }
 

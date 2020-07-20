@@ -51,6 +51,91 @@
     margin-bottom: 50px;
 }
 
+/* Paquetes */
+.opcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 900px;
+}
+
+
+.imgLg{
+    position: absolute;
+    top: 25%;
+    transition: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.imgLg img{
+    position: absolute;
+    margin-left: 25px;
+    width: 270px;
+}
+
+.opcion-content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.opcion-content h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.opcion-content p{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.opcion-content .nivel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.opcion-content .nivel h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.opcion-content .nivel span{
+    width: 78px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 900;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+
 @media (max-width:1000px){
     .slides {
         margin: auto;
